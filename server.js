@@ -40,6 +40,12 @@ server.register([
         }
     },
     {
+        register: require('hapi-graceful-pm2'),
+        options: {
+            timeout: 8000
+        }
+    },
+    {
         register: require("hapi-assets"),
         options: require('./assets.js')
     },
