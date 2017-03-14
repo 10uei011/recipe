@@ -8,7 +8,7 @@ exports.register = function(server, options, next){
             config: {
                 handler: function(request, reply){
                     reply.view('about', {
-                        title: 'Super Informative About Page'
+                        title: 'About'
                     });
                 },
                 id: 'about'
